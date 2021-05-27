@@ -1,1 +1,1 @@
-# CS422-GR5 Group One
+# Happy Hiking
