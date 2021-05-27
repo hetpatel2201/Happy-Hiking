@@ -1,0 +1,331 @@
+/* 
+blue: #42a4eb
+green: #009A2E 
+*/
+/*
+.bottomSpace {
+    margin-bottom: 10px;
+}
+
+.topSpace {
+    margin-top: 10px;
+}
+
+.zIndexDefault {
+    z-index: 50
+}
+
+.searchBarMid {
+    top: 50vh;
+    transition: 0.5s;
+}
+
+.map {
+    z-index: -1;
+    height: 84vh;
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 998;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 8px 0px 10px 0px;
+    text-decoration: none;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#title-text {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#more-reviews-btn {
+    position: absolute;
+    left: 670px;
+}
+*/
+
+.bottomSpace {
+    margin-bottom: 10px;
+}
+
+.topSpace {
+    margin-top: 10px;
+}
+
+.zIndexDefault {
+    z-index: 50
+}
+
+.searchBarMid {
+    top: 50vh;
+    transition: 0.5s;
+}
+
+.map {
+    z-index: -1;
+    height: 84vh;
+    width: 100%;
+}
+
+.locationEnteredMap {
+    position: relative;
+}
+
+.mapMarker1 {
+    position: absolute;
+    top: 70vh;
+    left: 15vw;
+}
+
+.mapMarker2 {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+}
+
+.mapMarker3 {
+    position: absolute;
+    top: 55vh;
+    left: 75vw;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 998;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 8px 0px 10px 0px;
+    text-decoration: none;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.container-fluid.main {
+    background-color: rgb(211, 211, 211);
+    height: 100vh;
+}
+
+.col-lg-8 .container {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #808080;
+}
+
+.col-lg-8 .container h3 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+
+.col-lg-8 .container .star {
+    height: 30px;
+    width: 30px;
+}
+
+.col-lg-8 .container #stars {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.topPic {
+    padding-bottom: 5px;
+}
+
+.bottomPic {
+    padding-bottom: 30px;
+}
+
+.smallPic {
+    width: 150px;
+}
+
+.largePic {
+    width: 305px;
+    height: 200px;
+}
+
+.review-text {
+    font-family: Arial;
+}
+
+.review-answer {
+    font-family: Arial;
+    color: #42a4eb;
+    padding-left: 10px;
+}
+
+.col-lg-8 .container h4 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+
+.col-lg-8 .container .reviewStar {
+    height: 30px;
+    width: 30px;
+}
+
+.col-lg-8 .container #reviewStars {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+#title-text {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#contain {
+    border-left:white;
+    border-top:white;
+    border-right:white;
+    border-bottom: white;
+}
+
+.verticalLine {
+    border-right: 3px solid #000000;
+}
+
+.horizonLine {
+    border: 1px solid #000000;
+}
+

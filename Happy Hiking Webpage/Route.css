@@ -1,0 +1,186 @@
+/*
+blue: #42a4eb
+green: #009A2E
+grey: #D3D3D3
+*/
+
+.LocationImage {
+    text-align: center;
+    /*margin-right: auto;*/
+    /* transform: scale(0.26, 0.26); */
+    margin-top: -14%;
+
+    /*box-sizing: border-box;
+    border: 15px solid #808080;
+    max-width: 59em;
+    margin-left: 18%;*/
+}
+
+.Image{
+    border: 9px solid lightgrey;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.body {
+    background-color: white;
+}
+
+.fullclick {
+    margin: 1em 0;
+    padding: 0;
+    max-width: 30em;
+    margin-left: 15%;
+    margin-top: -14%;
+}
+.fullclick li {
+    list-style: none;
+    margin: 1em 0;
+    padding: 20px 10px;
+    /*background: #2b2b2b;*/
+    background: lightgray;
+    position: relative;
+    transition: 400ms;
+    box-sizing: border-box;
+    border: 3px solid #808080;
+}
+.todelete {
+    opacity: 0;
+}
+.fullclick p a {
+    color: lime;
+    z-index: 2;
+    position: relative;
+}
+.fullclick a.main {
+    color: #85baff;
+    text-align: right;
+    display: block;
+    z-index: 1;
+}
+.fullclick li a.main::after {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    content: ' ';
+}
+.fullclick:hover a.main,
+.fullclick:focus-within a.main {
+    color: #cfe4ff;
+}
+.fullclick li button {
+    z-index: 2;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0;
+    transition: 400ms;
+    border: none;
+    color: #fff;
+    background: #333;
+}
+.fullclick li:hover button,
+.fullclick li:focus-within button {
+    opacity: 1;
+}
+.fullclick li:hover, .fullclick li:focus-within {
+    background:#484848;
+    box-shadow: 0px 3px 6px #000;
+}
+nav {display:none}
+/*---------------------------------------------------------------------*/
+
+.fullclick2 {
+    margin: 1em 0;
+    padding: 0;
+    max-width: 30em;
+    margin-left: 52%;
+    /*margin-top: -31.3%;*/
+    /*margin-top: -32.18%;*/
+    margin-top: -32.4%;
+}
+.fullclick2 li {
+    list-style: none;
+    margin: 1em 0;
+    padding: 20px 10px;
+    /*background: #2b2b2b;*/
+    background: lightgray;
+    position: relative;
+    transition: 400ms;
+    box-sizing: border-box;
+    border: 3px solid #808080;
+}
+.todelete2 {
+    opacity: 0;
+}
+.fullclick2 p a {
+    color: lime;
+    z-index: 2;
+    position: relative;
+}
+.fullclick2 a.main2 {
+    color: #85baff;
+    text-align: right;
+    display: block;
+    z-index: 1;
+}
+.fullclick2 li a.main2::after {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    content: ' ';
+}
+.fullclick2:hover a.main2,
+.fullclick2:focus-within a.main2 {
+    color: #cfe4ff;
+}
+.fullclick2 li button {
+    z-index: 2;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0;
+    transition: 400ms;
+    border: none;
+    color: #fff;
+    background: #333;
+}
+.fullclick2 li:hover button,
+.fullclick2 li:focus-within button {
+    opacity: 1;
+}
+.fullclick2 li:hover, .fullclick2 li:focus-within {
+    background:#484848;
+    box-shadow: 0px 3px 6px #000;
+}
+
+a:hover{ 
+    text-decoration:none; 
+    background-color:gray;
+}
+
+@media only screen and (max-device-width: 480px){
+    .LocationImage {
+        text-align: center;
+        margin-right: 70%;
+        transform: scale(0.3, 0.3);
+        margin-top: -60%;
+        display: none;
+    }
+
+    .fullclick {
+        margin: 1em 0;
+        padding: 0;
+        max-width: 30em;
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    .fullclick2 {
+        margin: 1em 0;
+        padding: 0;
+        max-width: 30em;
+        margin-left: auto;
+        margin-top: auto;
+    }
+}

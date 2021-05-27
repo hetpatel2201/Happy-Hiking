@@ -1,0 +1,14 @@
+#secondColumn {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#img {
+    width: 150px;
+    height: 150px;
+}
+
+.col-lg-8.submit h3,
+h4 {
+    color: black;
+}

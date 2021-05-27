@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Route2</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="RouteSelection.css" media="screen"/>
+  <script>
+    $(function(){
+      $("#header").load("headerTemplate.html");
+      //$("#footer").load("footer.html");
+    });
+  </script>
+  <div id="header"></div>
+</head>
+<body class="body">
+<div id="textbox" class="textBox" style="background-image: url(RouteImages/Location1.jpg)">
+
+</div>
+<div id="routename" class="routeName">
+  Route 2
+</div>
+<div id="length" class="Length">
+  Length: 1.8 Miles
+</div>
+<div id="time" class="Time">
+  Time: 2.5 Hours
+</div>
+
+<ul class="fullclick">
+  <li style="color: white">START THIS ROUTE <a href="startRoute1.2.html" class="main"></a></li>
+</ul>
+<ul class="fullclick2">
+  <li style="color: white">Read Reviews <a href="allReviews.html" class="main2"></a></li>
+</ul>
+
+<div class="fourstars">
+  <img src="images/green-4-stars-Transparent.png" alt="">
+</div>
+
+<div class="button" id="btnColumn">
+  <button type="button" class="btn btn-dark" onclick="location.href='PossibleLocation1.html'">←</button>
+</div>
+
+</body>
+</html>

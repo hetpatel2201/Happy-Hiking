@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="submit.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Submission</title>
+
+    <script>
+        $(document).ready(function() {
+            document.getElementById("searchBar").value = localStorage["searchBarValue"];
+
+            document.getElementById("searchBar").addEventListener("keyup", function(event) {
+                event.preventDefault();
+                if (event.keyCode === 13) {
+                    searchBarClicked();
+                }
+            });
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("Overlay").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("Overlay").style.width = "0%";
+        }
+
+        function searchBarClicked() {
+            var str = document.getElementById("searchBar").value;
+            localStorage["searchBarValue"] = str;
+            window.location.href = "locationEntered.html";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="overlay" id="Overlay"></div>
+
+    <div class="d-flex justify-content-between flex-column flex-md-row align-items-center p-2 px-md-4 border-bottom shadow-sm zIndexDefault">
+        <a href="index.html" class="bottomSpace zIndexDefault"><img src="images\logo.png" alt="Happy Hiking Logo" class="my-0 mr-md-auto font-weight-normal img-fluid"></a>
+
+        <div id="searchDiv" class="input-group mb-3 w-50 my-auto zIndexDefault">
+            <input type="text" class="form-control" id="searchBar" placeholder="Find A Trail!" aria-label="Find A Trail!" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-success" type="button" onclick="searchBarClicked()">Search</button>
+            </div>
+        </div>
+
+        <a href="javascript:void(0)" class="topSpace zIndexDefault" onclick="openNav()"><img src="images\avatar3.png" alt="Profile Icon" class="img-fluid"></a>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="text-center">
+            <h2>Profile</h2>
+            <img src="images/por2.png" alt="profile picture" class="img-fluid">
+            <h5>YourName McLastName</h5>
+            <h5>The_Username</h5>
+            <br/>
+            <h5>Default Location: IL, USA</h5>
+
+        </div>
+
+    </div>
+    <div class="container-fluid main">
+        <br>
+        <div class="row1">
+            <div class="col-md-2 text-center" id="btnColumn">
+                <a type="button" class="btn btn-dark" href="allReviews.html">←</a>
+            </div>
+            <div class="col-lg-8"></div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-2" id="firstColumn">
+            </div>
+            <div class="col-lg-8 submit" id="secondColumn">
+                <br><br>
+                <img src="images/submitted.png" id="img">
+                <h3>Success!</h3>
+                <h4>Your review has been added. Thank you!</h4>
+                <br><br>
+            </div>
+            <div class="col-sm-2" id="thirdColumn">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

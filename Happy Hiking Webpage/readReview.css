@@ -1,0 +1,53 @@
+.container-fluid.main {
+    background-color: rgb(211, 211, 211);
+    height: 100vh;
+}
+
+.col-lg-8 .container {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #808080;
+}
+
+.col-lg-8 .container h3 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+
+.col-lg-8 .container .star {
+    height: 30px;
+    width: 30px;
+}
+
+.col-lg-8 .container #stars {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.topPic {
+    padding-bottom: 5px;
+}
+
+.bottomPic {
+    padding-bottom: 30px;
+}
+
+.smallPic {
+    width: 150px;
+}
+
+.largePic {
+    width: 305px;
+    height: 200px;
+}
+
+.review-text {
+    font-family: Arial;
+}
+
+.review-answer {
+    font-family: Arial;
+    color: #009A2E;
+    padding-left: 10px;
+}

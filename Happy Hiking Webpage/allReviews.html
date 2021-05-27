@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>All Reviews</title>
+
+    <script>
+        $(document).ready(function() {
+            document.getElementById("searchBar").value = localStorage["searchBarValue"];
+
+            document.getElementById("searchBar").addEventListener("keyup", function(event) {
+                event.preventDefault();
+                if (event.keyCode === 13) {
+                    searchBarClicked();
+                }
+            });
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("Overlay").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("Overlay").style.width = "0%";
+        }
+
+        function searchBarClicked() {
+            var str = document.getElementById("searchBar").value;
+            localStorage["searchBarValue"] = str;
+            window.location.href = "locationEntered.html";
+        }
+
+        function writeReviewClicked() {
+            window.location.href = "writeReview.html";
+        }
+
+        function readMoreReviewsClicked() {
+            window.location.href = "noMoreReviews.html";
+        }
+        function back() {
+            window.location.href = "locationEntered.html";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="overlay" id="Overlay"></div>
+
+    <div class="d-flex justify-content-between flex-column flex-md-row align-items-center p-2 px-md-4 border-bottom shadow-sm zIndexDefault">
+        <a href="index.html" class="bottomSpace zIndexDefault"><img src="images\logo.png" alt="Happy Hiking Logo" class="my-0 mr-md-auto font-weight-normal img-fluid"></a>
+
+        <div id="searchDiv" class="input-group mb-3 w-50 my-auto zIndexDefault">
+            <input type="text" class="form-control" id="searchBar" placeholder="Find A Trail!" aria-label="Find A Trail!" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-success" type="button" onclick="searchBarClicked()">Search</button>
+            </div>
+        </div>
+
+        <a href="javascript:void(0)" class="topSpace zIndexDefault" onclick="openNav()"><img src="images\avatar3.png" alt="Profile Icon" class="img-fluid"></a>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="text-center">
+            <h2>Profile</h2>
+            <img src="images/por2.png" alt="profile picture" class="img-fluid">
+            <h5>YourName McLastName</h5>
+            <h5>The_Username</h5>
+            <br/>
+            <h5>Default Location: IL, USA</h5>
+        </div>
+    </div>
+
+    <div class="container-fluid main">
+        <br>
+        <div class="row1">
+            <div class="col-md-2 text-center" id="btnColumn">
+                <button type="button" class="btn btn-dark" onclick="back()">X</button>
+            </div>
+            <div class="col-lg-8"></div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2" id="firstColumn">
+            </div>
+            <div class="col-lg-8" id="secondColumn">
+                <p id="title-text">Reviews</p>
+            <div class="text-right">
+                <button type="button" class="btn btn-dark" onclick="writeReviewClicked()">Write a review</button>
+                <br></br>
+            </div>
+                <div class="container">
+                    <div class="contain" id="contain">
+                        <div class="row">
+                          <div class="col-sm" id="horizonLine">
+                            <h4>Good Reviews</h4>
+                          </div>
+                          <div class="col-sm">
+                            <h4>Bad Reviews</h4>
+                          </div>
+                          <hr width="100%" color="black" class="horizonLine">
+                          <div class="container" id="contain">
+                            <div class="row">
+                              <div class="col-sm">
+                                <div id="reviewstars">
+                                    <img src="images/filledStar.png" alt="" class="reviewStar">
+                                    <img src="images/filledStar.png" alt="" class="reviewStar">
+                                    <img src="images/filledStar.png" alt="" class="reviewStar">
+                                    <img src="images/filledStar.png" alt="" class="reviewStar">
+                                    <img src="images/emptyStar.png" alt="" class="reviewStar">
+                                </div>
+                                <div id="list">
+                                    <br>
+                                    <li>
+                                        <span class="review-text">Great scenary</span>
+                                    </li>
+                                    <li>
+                                        <span class="review-text">Pet enjoys it</span>
+                                    </li>
+                                </div>
+                              </div>      
+                              <div class="col-sm">
+                                <span style="float:right">- Josh P.</span><br><br><br><br>
+                                <a href="readMore1.html" class="link-primary"><span style="float:right">Continue Reading</span></a>
+                              </div>
+                              <div class="verticalLine"></div>
+                              <div class="col-sm">
+                                <div id="reviewstars">
+                                    <img src="images/filledStar.png" alt="" class="reviewStar">
+                                    <img src="images/filledStar.png" alt="" class="reviewStar">
+                                    <img src="images/emptyStar.png" alt="" class="reviewStar">
+                                    <img src="images/emptyStar.png" alt="" class="reviewStar">
+                                    <img src="images/emptyStar.png" alt="" class="reviewStar">
+                                </div>
+                                <div id="list">
+                                    <br>
+                                    <li>
+                                        <span class="review-text">Don't like terrain</span>
+                                    </li>
+                                    <li>
+                                        <span class="review-text">Tripped one time</span>
+                                    </li>
+                                </div>
+                              </div>
+
+                              <div class="col-sm">
+                                <span style="float:right">- Drake D.</span><br><br><br><br>
+                                <a href="readReview3.html" class="link-primary"><span style="float:right">Continue Reading</span></a>
+                              </div>
+                            </div>
+                                <hr width="100%" color="black" class="horizonLine">
+                                <div class="row">
+                                    <div class="col-sm">
+                                      <div id="reviewstars">
+                                          <img src="images/filledStar.png" alt="" class="reviewStar">
+                                          <img src="images/filledStar.png" alt="" class="reviewStar">
+                                          <img src="images/filledStar.png" alt="" class="reviewStar">
+                                          <img src="images/filledStar.png" alt="" class="reviewStar">
+                                          <img src="images/filledStar.png" alt="" class="reviewStar">
+                                      </div>
+                                      <div id="list">
+                                          <br>
+                                          <li>
+                                              <span class="review-text">The best trail</span>
+                                          </li>
+                                          <li>
+                                              <span class="review-text">Favorite spot</span>
+                                          </li>
+                                      </div>
+                                    </div>
+                                
+                                    <div class="col-sm">
+                                          <span style="float:right">- Patrick S.</span><br><br><br><br>
+                                          <a href="readMore2.html" class="link-primary"><span style="float:right">Continue Reading</span></a>
+                                    </div>
+                                    <div class="verticalLine"></div>
+                                    <div class="col-sm" id="contain">
+                                      <div id="reviewstars">
+                                          <img src="images/filledStar.png" alt="" class="reviewStar">
+                                          <img src="images/filledStar.png" alt="" class="reviewStar">
+                                          <img src="images/emptyStar.png" alt="" class="reviewStar">
+                                          <img src="images/emptyStar.png" alt="" class="reviewStar">
+                                          <img src="images/emptyStar.png" alt="" class="reviewStar">
+                                      </div>
+                                      <div id="list">
+                                          <br>
+                                          <li>
+                                              <span class="review-text">Got lost</span>
+                                          </li>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm">
+                                          <span style="float:right">- Velma T.</span><br><br><br><br>
+                                          <a href="readReview4.html" class="link-primary"><span style="float:right">Continue Reading</span></a>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <br></br>
+            <div class="text-center">
+                <button type="button" class="btn btn-dark" onclick="readMoreReviewsClicked()">Read more reviews</button>
+                <br></br>
+            </div>
+            <div class="col-sm-2" id="thirdColumn">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
